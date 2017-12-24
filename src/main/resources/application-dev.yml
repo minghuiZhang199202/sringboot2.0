@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  context-path: /girl
+
+girl:
+  cupSize: B
+  age: 18
+  content: "cupSize: ${girl.cupSize}, age: ${girl.age}"
+
+
+#spring.thymeleaf.prefix=classpath:/templates/
+#spring.thymeleaf.suffix=.html
+#spring.thymeleaf.mode=HTML5
+#spring.thymeleaf.encoding=UTF-8
+# ;charset=<encoding> is added
+#spring.thymeleaf.content-type=text/html
+# set to false for hot refresh
+
+spring:
+  thymeleaf:
+    cache: false
+
+
+logging:
+  level:
+    com.loc.springboot: debug
+  file: "girl_log"
+
